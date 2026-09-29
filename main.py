@@ -104,7 +104,7 @@ async def chat_endpoint(request: ChatRequest):
         for doc in result.get("context", []):
             source_info = {
                 "source": doc.metadata.get("source"),
-                "page": doc.metadata.get("page"),
+                "page": doc.metadata.get("page_label"),
                 
             }
             sources.append(source_info)

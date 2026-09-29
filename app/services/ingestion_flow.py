@@ -27,7 +27,8 @@ def ingest_pdf_files(file_paths: List[str]) -> List[Document]:
         chunk_overlap=150
     )
     
-    final_documents = text_splitter.split_documents(documents)
+    #final_documents = text_splitter.split_documents(documents)
+    final_documents = documents.copy()
     
     # Add a unique ID to each document
     for doc in final_documents:
