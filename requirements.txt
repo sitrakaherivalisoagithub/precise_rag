@@ -1,0 +1,12 @@
+langchain
+langchain-core
+langchain-google-vertexai
+langchain-google-genai
+langchain-text-splitters
+langchain-unstructured
+langchain-qdrant
+
+fastapi
+uvicorn
+python-dotenv
+requests 

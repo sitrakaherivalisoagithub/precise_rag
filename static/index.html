@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">✦</div>
+            <span>AI Assistant</span>
+        </div>
+
+        <button id="new-chat" class="new-chat">
+            + Nouvelle conversation
+        </button>
+
+        <div class="history">
+            <div class="history-title">Conversations</div>
+
+            <div id="history-list"></div>
+        </div>
+
+        <div class="sidebar-bottom">
+            <span>AI Assistant</span>
+            <small>Powered by LangGraph</small>
+        </div>
+
+    </aside>
+
+
+    <!-- Main -->
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <h1>Assistant IA</h1>
+                <span class="status">
+                    <span class="status-dot"></span>
+                    En ligne
+                </span>
+            </div>
+        </header>
+
+
+        <!-- Messages -->
+        <section id="messages" class="messages">
+
+            <div class="welcome">
+                <div class="welcome-icon">✦</div>
+
+                <h2>Comment puis-je vous aider ?</h2>
+
+                <p>
+                    Posez votre question et l'assistant vous répondra
+                    à partir des connaissances disponibles.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Input -->
+        <div class="input-container">
+
+            <form id="chat-form" class="input-box">
+
+                <textarea
+                    id="message-input"
+                    placeholder="Écrivez votre message..."
+                    rows="1"
+                ></textarea>
+
+                <button id="send-button" type="submit">
+                    ➤
+                </button>
+
+            </form>
+
+            <div class="input-hint">
+                Entrée pour envoyer · Shift + Entrée pour une nouvelle ligne
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+<script src="/static/app.js"></script>
+
+</body>
+</html>
