@@ -14,3 +14,4 @@ requests
 pydantic-settings
 langchain-community
 pypdf
+python-multipart
