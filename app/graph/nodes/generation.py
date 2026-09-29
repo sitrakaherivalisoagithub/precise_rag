@@ -18,10 +18,10 @@ async def generate_answer(state: ChatState):
     messages = state["messages"]
     
     # Use rewritten_query if available, otherwise use the original message
-    if state.get("rewritten_query"):
-        question = state["rewritten_query"]
-    else:
-        question = messages[-1].content
+    #if state.get("rewritten_query"):
+    #question = state["rewritten_query"]
+    #else:
+    question = messages[-1].content
 
     # Generate current date information
     now = datetime.now()
