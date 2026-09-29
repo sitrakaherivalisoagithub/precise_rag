@@ -12,3 +12,5 @@ python-dotenv
 requests 
 
 pydantic-settings
+langchain-community
+pypdf
